@@ -2,7 +2,6 @@
 
 > Build native-feeling macOS applications that look like Apple designed them.
 
-![SnapVault Demo](https://img.shields.io/badge/Demo-SnapVault-blue)
 ![macOS](https://img.shields.io/badge/Platform-macOS-black)
 ![Design System](https://img.shields.io/badge/Design-Native-success)
 
@@ -35,24 +34,9 @@ claude code install macos-design
 
 Read the reference files based on what you're building:
 
-- **All macOS apps** → [`layout-and-composition.md`](./layout-and-composition.md) (required)
-- **Keyboard shortcuts, panels, search** → [`interaction-patterns.md`](./interaction-patterns.md)
-- **Colors, typography, blur effects** → [`visual-design.md`](./visual-design.md)
-
-## Demo: SnapVault
-
-Included is **SnapVault**, a fully functional screenshot organizer that demonstrates every principle:
-
-- Native window chrome with integrated traffic lights
-- Translucent sidebar with backdrop blur
-- Responsive grid layout with staggered animations
-- Keyboard shortcuts (`⌘N`, `⌘F`, `Esc`)
-- Real-time search filtering
-- Drag-and-drop support
-- Toast notifications with optimistic UI
-- Full light/dark mode support
-
-**[Open SnapVault Demo →](./snapvault.html)**
+- **All macOS apps** → [`references/layout-and-composition.md`](./references/layout-and-composition.md) (required)
+- **Keyboard shortcuts, panels, search** → [`references/interaction-patterns.md`](./references/interaction-patterns.md)
+- **Colors, typography, blur effects** → [`references/visual-design.md`](./references/visual-design.md)
 
 ## What You'll Build
 
@@ -129,22 +113,13 @@ Only show UI when it's useful. Hide filters/toolbars when there's no content.
 
 ```
 .
-├── SKILL.md                      # Skill definition and quick-start
-├── README.md                     # This file
-├── layout-and-composition.md     # Layout patterns and structure
-├── visual-design.md              # Colors, typography, shadows, blur
-├── interaction-patterns.md       # Keyboard, animations, search, drag-drop
-└── snapvault.html               # Demo app showcasing all principles
+├── SKILL.md                           # Skill definition and quick-start
+├── README.md                          # This file
+└── references/
+    ├── layout-and-composition.md      # Layout patterns and structure
+    ├── visual-design.md               # Colors, typography, shadows, blur
+    └── interaction-patterns.md        # Keyboard, animations, search, drag-drop
 ```
-
-## Browser Compatibility
-
-The demo uses modern CSS features:
-- `backdrop-filter` (Safari, Chrome, Edge)
-- CSS custom properties
-- `prefers-color-scheme` media query
-
-For production apps, consider fallbacks for older browsers.
 
 ## Credits
 
